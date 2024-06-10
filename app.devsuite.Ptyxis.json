@@ -90,7 +90,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/chergert/ptyxis.git",
-                    "commit" : "13526a2be7e59d608812e4aa2c745fcc23722ed4"
+                    "commit" : "cf9982d8d797fc13e02a655521fe7252cb413aaf"
                 },
                 {
                     "type" : "patch",
