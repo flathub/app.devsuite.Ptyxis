@@ -64,7 +64,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/vte.git",
-                    "commit" : "2b413dab1dcc6a5d4ff200ad0703240a81c82d06"
+                    "commit" : "41b19080b5594300afc010e1ef7d838ab120603a"
                 },
                 {
                     "type" : "patch",
