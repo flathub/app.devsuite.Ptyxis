@@ -64,7 +64,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/vte.git",
-                    "commit" : "2b413dab1dcc6a5d4ff200ad0703240a81c82d06"
+                    "commit" : "41b19080b5594300afc010e1ef7d838ab120603a"
                 },
                 {
                     "type" : "patch",
@@ -90,7 +90,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/chergert/ptyxis.git",
-                    "commit" : "13526a2be7e59d608812e4aa2c745fcc23722ed4"
+                    "commit" : "cf9982d8d797fc13e02a655521fe7252cb413aaf"
                 },
                 {
                     "type" : "patch",
