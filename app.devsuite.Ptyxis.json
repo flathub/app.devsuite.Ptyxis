@@ -1,7 +1,7 @@
 {
     "app-id" : "app.devsuite.Ptyxis",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "46",
+    "runtime-version" : "47",
     "sdk" : "org.gnome.Sdk",
     "command" : "ptyxis",
     "finish-args" : [
@@ -35,7 +35,11 @@
             "name" : "libportal",
             "config-opts" : [
                 "--buildtype=release",
-                "-Dbackends=gtk4",
+                "-Dbackend-gtk3=disabled",
+                "-Dbackend-gtk4=enabled",
+                "-Dbackend-qt5=disabled",
+                "-Dbackend-qt6=disabled",
+                "-Dportal-tests=false",
                 "-Ddocs=false",
                 "-Dtests=false"
             ],
@@ -44,8 +48,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/flatpak/libportal/releases/download/0.6/libportal-0.6.tar.xz",
-                    "sha256" : "88a12c3ba71bc31acff7238c280de697d609cebc50830c3766776ec35abc6566"
+                    "url" : "https://github.com/flatpak/libportal/releases/download/0.8.1/libportal-0.8.1.tar.xz",
+                    "sha256" : "281e54e4f8561125a65d20658f1462ab932b2b1258c376fed2137718441825ac"
                 }
             ]
         },
@@ -64,15 +68,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/vte.git",
-                    "commit" : "41b19080b5594300afc010e1ef7d838ab120603a"
-                },
-                {
-                    "type" : "patch",
-                    "path" : "0001-add-notification-and-shell-precmd-preexec.patch"
-                },
-                {
-                    "type" : "patch",
-                    "path" : "0002-a11y-implement-GtkAccessibleText.patch"
+                    "tag" : "0.78.0"
                 }
             ]
         },
@@ -90,7 +86,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/chergert/ptyxis.git",
-                    "commit" : "7c3f54f5abf8f0f87fe25faee6c245f91b7c786e"
+                    "commit" : "3e8a7dc24a1ddf83778fd5563b4052e643d44d93"
                 },
                 {
                     "type" : "patch",
