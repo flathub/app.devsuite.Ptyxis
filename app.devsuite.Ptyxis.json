@@ -86,7 +86,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/chergert/ptyxis.git",
-                    "commit" : "3e8a7dc24a1ddf83778fd5563b4052e643d44d93"
+                    "tag" : "47.1"
                 },
                 {
                     "type" : "patch",
