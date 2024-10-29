@@ -68,7 +68,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/vte.git",
-                    "tag" : "0.78.0"
+                    "tag" : "0.78.1"
                 }
             ]
         },
@@ -86,7 +86,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/chergert/ptyxis.git",
-                    "tag" : "47.2"
+                    "tag" : "47.4"
                 },
                 {
                     "type" : "patch",
