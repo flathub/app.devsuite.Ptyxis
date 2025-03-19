@@ -1,7 +1,7 @@
 {
     "app-id" : "app.devsuite.Ptyxis",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "47",
+    "runtime-version" : "48",
     "sdk" : "org.gnome.Sdk",
     "command" : "ptyxis",
     "finish-args" : [
@@ -54,6 +54,18 @@
             ]
         },
         {
+            "name" : "fast_float",
+            "buildsystem" : "cmake-ninja",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/fastfloat/fast_float.git",
+                    "tag": "v8.0.2",
+                    "commit": "50a80a73ab2ab256ba1c3bf86923ddd8b4202bc7"
+                }
+            ]
+        },
+        {
             "name" : "vte",
             "buildsystem" : "meson",
             "config-opts" : [
@@ -68,7 +80,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/vte.git",
-                    "tag" : "0.78.1"
+                    "tag" : "0.80.0"
                 }
             ]
         },
@@ -86,7 +98,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/chergert/ptyxis.git",
-                    "tag" : "47.12"
+                    "tag" : "48.0"
                 },
                 {
                     "type" : "patch",

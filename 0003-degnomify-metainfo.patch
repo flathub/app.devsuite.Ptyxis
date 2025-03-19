@@ -1,5 +1,5 @@
 diff --git a/data/org.gnome.Ptyxis.metainfo.xml.in.in b/data/org.gnome.Ptyxis.metainfo.xml.in.in
-index 59d8b72..8ebe0ac 100644
+index 4cdaa14..37d7819 100644
 --- a/data/org.gnome.Ptyxis.metainfo.xml.in.in
 +++ b/data/org.gnome.Ptyxis.metainfo.xml.in.in
 @@ -27,12 +27,8 @@
@@ -8,9 +8,9 @@ index 59d8b72..8ebe0ac 100644
    </description>
 -  <project_group>GNOME</project_group>
    <!-- developer_name tag deprecated with Appstream 1.0 -->
-   <developer_name translatable="no">Christian Hergert</developer_name>
+   <developer_name translate="no">Christian Hergert</developer_name>
 -  <developer id="org.gnome">
--    <name translatable="no">Christian Hergert</name>
+-    <name translate="no">Christian Hergert</name>
 -  </developer>
    <url type="homepage">https://gitlab.gnome.org/chergert/ptyxis</url>
    <url type="bugtracker">https://gitlab.gnome.org/chergert/ptyxis/issues</url>
