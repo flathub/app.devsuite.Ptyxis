@@ -19,11 +19,13 @@
         "/etc",
         "/libexec/vte-urlencode-cwd",
         "/include",
+        "/lib/cmake",
         "/lib/pkgconfig",
         "/man",
         "/share/doc",
         "/share/gir-1.0",
         "/share/gtk-doc",
+        "/share/cmake",
         "/share/man",
         "/share/pkgconfig",
         "/share/vala",
@@ -66,6 +68,18 @@
             ]
         },
         {
+            "name": "simdutf",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/simdutf/simdutf.git",
+                    "tag": "v7.7.0",
+                    "commit": "94fb52ea0219cb37092d8ae294b4702bacf5d8df"
+                }
+            ]
+        },
+        {
             "name" : "vte",
             "buildsystem" : "meson",
             "config-opts" : [
@@ -80,7 +94,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/vte.git",
-                    "tag" : "0.80.2"
+                    "tag" : "0.82.2"
                 }
             ]
         },
