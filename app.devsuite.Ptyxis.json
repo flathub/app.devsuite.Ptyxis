@@ -50,8 +50,13 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/flatpak/libportal/releases/download/0.9.0/libportal-0.9.0.tar.xz",
-                    "sha256" : "113910f06f39387328805397053d20c7acafb7388d8e6cd5e06e05efb9690735"
+                    "url" : "https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar.xz",
+                    "sha256" : "de801ee349ed3c255a9af3c01b1a401fab5b3fc1c35eb2fd7dfb35d4b8194d7f",
+                    "x-checker-data" : {
+                        "type" : "anitya",
+                        "project-id" : 230124,
+                        "url-template" : "https://github.com/flatpak/libportal/releases/download/$version/libportal-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -62,8 +67,13 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/fastfloat/fast_float.git",
-                    "tag": "v8.0.2",
-                    "commit": "50a80a73ab2ab256ba1c3bf86923ddd8b4202bc7"
+                    "tag" : "v8.2.2",
+                    "commit" : "97b54ca9e75f5303507699d27c6b4f4efe4641a1",
+                    "x-checker-data" : {
+                        "type" : "anitya",
+                        "project-id" : 214353,
+                        "tag-template" : "v$version"
+                    }
                 }
             ]
         },
@@ -74,8 +84,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/simdutf/simdutf.git",
-                    "tag": "v7.7.0",
-                    "commit": "94fb52ea0219cb37092d8ae294b4702bacf5d8df"
+                    "tag": "v8.0.0",
+                    "commit": "7f3757fba1b426e7f583011ba7bc4e700a8fbb1a",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 378662,
+                        "tag-template": "v$version"
+                    }
                 }
             ]
         },
@@ -92,9 +107,13 @@
             ],
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/vte.git",
-                    "tag" : "0.82.2"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/vte/0.82/vte-0.82.3.tar.xz",
+                    "sha256" : "6dc6278f6fee30d07d1a03e2ba3335b1ea4e8d2956ceb59d861943115d930a85",
+                    "x-checker-data" : {
+                        "type" : "gnome",
+                        "name" : "vte"
+                    }
                 }
             ]
         },
@@ -110,9 +129,13 @@
             ],
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/chergert/ptyxis.git",
-                    "tag" : "49.2"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/ptyxis/49/ptyxis-49.3.tar.xz",
+                    "sha256" : "d15b6ed8ebd19dfbe46be48ea4ab3ba4dc5048e277c9733a62ea19111f0bfc5b",
+                    "x-checker-data" : {
+                        "type" : "gnome",
+                        "name" : "ptyxis"
+                    }
                 },
                 {
                     "type" : "patch",
