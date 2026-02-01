@@ -1,10 +1,10 @@
 {
-    "app-id": "app.devsuite.Ptyxis",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
-    "sdk": "org.gnome.Sdk",
-    "command": "ptyxis",
-    "finish-args": [
+    "app-id" : "app.devsuite.Ptyxis",
+    "runtime" : "org.gnome.Platform",
+    "runtime-version" : "49",
+    "sdk" : "org.gnome.Sdk",
+    "command" : "ptyxis",
+    "finish-args" : [
         "--allow=devel",
         "--device=dri",
         "--filesystem=host",
@@ -14,7 +14,7 @@
         "--socket=wayland",
         "--talk-name=org.freedesktop.Flatpak"
     ],
-    "cleanup": [
+    "cleanup" : [
         "/bin/vte-2.91-gtk4",
         "/etc",
         "/libexec/vte-urlencode-cwd",
@@ -32,10 +32,10 @@
         "*.la",
         "*.a"
     ],
-    "modules": [
+    "modules" : [
         {
-            "name": "libportal",
-            "config-opts": [
+            "name" : "libportal",
+            "config-opts" : [
                 "--buildtype=release",
                 "-Dbackend-gtk3=disabled",
                 "-Dbackend-gtk4=enabled",
@@ -45,34 +45,34 @@
                 "-Ddocs=false",
                 "-Dtests=false"
             ],
-            "buildsystem": "meson",
-            "builddir": true,
-            "sources": [
+            "buildsystem" : "meson",
+            "builddir" : true,
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar.xz",
-                    "sha256": "de801ee349ed3c255a9af3c01b1a401fab5b3fc1c35eb2fd7dfb35d4b8194d7f",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 230124,
-                        "url-template": "https://github.com/flatpak/libportal/releases/download/$version/libportal-$version.tar.xz"
+                    "type" : "archive",
+                    "url" : "https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar.xz",
+                    "sha256" : "de801ee349ed3c255a9af3c01b1a401fab5b3fc1c35eb2fd7dfb35d4b8194d7f",
+                    "x-checker-data" : {
+                        "type" : "anitya",
+                        "project-id" : 230124,
+                        "url-template" : "https://github.com/flatpak/libportal/releases/download/$version/libportal-$version.tar.xz"
                     }
                 }
             ]
         },
         {
-            "name": "fast_float",
-            "buildsystem": "cmake-ninja",
-            "sources": [
+            "name" : "fast_float",
+            "buildsystem" : "cmake-ninja",
+            "sources" : [
                 {
-                    "type": "git",
-                    "url": "https://github.com/fastfloat/fast_float.git",
-                    "tag": "v8.2.2",
-                    "commit": "97b54ca9e75f5303507699d27c6b4f4efe4641a1",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 214353,
-                        "tag-template": "v$version"
+                    "type" : "git",
+                    "url" : "https://github.com/fastfloat/fast_float.git",
+                    "tag" : "v8.2.2",
+                    "commit" : "97b54ca9e75f5303507699d27c6b4f4efe4641a1",
+                    "x-checker-data" : {
+                        "type" : "anitya",
+                        "project-id" : 214353,
+                        "tag-template" : "v$version"
                     }
                 }
             ]
@@ -95,9 +95,9 @@
             ]
         },
         {
-            "name": "vte",
-            "buildsystem": "meson",
-            "config-opts": [
+            "name" : "vte",
+            "buildsystem" : "meson",
+            "config-opts" : [
                 "--buildtype=release",
                 "-Dgtk3=false",
                 "-Dgtk4=true",
@@ -105,41 +105,42 @@
                 "-Dgir=false",
                 "-Dvapi=false"
             ],
-            "sources": [
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/vte/0.83/vte-0.83.90.tar.xz",
-                    "sha256": "a43441a78f8893268ae927e7bae3b17ffe669913ed954e172fbd12d3e083e286",
-                    "x-checker-data": {
-                        "type": "gnome",
-                        "name": "vte"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/vte/0.82/vte-0.82.3.tar.xz",
+                    "sha256" : "6dc6278f6fee30d07d1a03e2ba3335b1ea4e8d2956ceb59d861943115d930a85",
+                    "x-checker-data" : {
+                        "type" : "gnome",
+                        "version-scheme": "odd-minor-is-unstable",
+                        "name" : "vte"
                     }
                 }
             ]
         },
         {
-            "name": "ptyxis",
-            "builddir": true,
-            "buildsystem": "meson",
-            "config-opts": [
+            "name" : "ptyxis",
+            "builddir" : true,
+            "buildsystem" : "meson",
+            "config-opts" : [
                 "--buildtype=release",
                 "-Ddevelopment=false",
                 "-Dgeneric=ptyxis",
                 "-Dapp-id=app.devsuite.Ptyxis"
             ],
-            "sources": [
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/ptyxis/49/ptyxis-49.3.tar.xz",
-                    "sha256": "d15b6ed8ebd19dfbe46be48ea4ab3ba4dc5048e277c9733a62ea19111f0bfc5b",
-                    "x-checker-data": {
-                        "type": "gnome",
-                        "name": "ptyxis"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/ptyxis/49/ptyxis-49.3.tar.xz",
+                    "sha256" : "d15b6ed8ebd19dfbe46be48ea4ab3ba4dc5048e277c9733a62ea19111f0bfc5b",
+                    "x-checker-data" : {
+                        "type" : "gnome",
+                        "name" : "ptyxis"
                     }
                 },
                 {
-                    "type": "patch",
-                    "path": "0003-degnomify-metainfo.patch"
+                    "type" : "patch",
+                    "path" : "0003-degnomify-metainfo.patch"
                 }
             ]
         }
