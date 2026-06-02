@@ -126,6 +126,7 @@
                 "--buildtype=release",
                 "-Ddevelopment=false",
                 "-Dgeneric=ptyxis",
+                "-Dlibc-compat=true",
                 "-Dapp-id=app.devsuite.Ptyxis"
             ],
             "sources": [
