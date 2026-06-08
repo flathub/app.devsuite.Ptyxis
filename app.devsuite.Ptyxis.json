@@ -67,8 +67,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fastfloat/fast_float.git",
-                    "tag": "v8.2.5",
-                    "commit": "05087a303dad9c98768b33c829d398223a649bc6",
+                    "tag": "v8.2.7",
+                    "commit": "e0b53eaf63c6d00e0725788ef1dbb759aa321d79",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 214353,
