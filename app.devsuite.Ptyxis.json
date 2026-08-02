@@ -50,8 +50,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar.xz",
-                    "sha256": "de801ee349ed3c255a9af3c01b1a401fab5b3fc1c35eb2fd7dfb35d4b8194d7f",
+                    "url": "https://github.com/flatpak/libportal/releases/download/0.10.0/libportal-0.10.0.tar.xz",
+                    "sha256": "1c74a3f7becbd4ff745d7f565afd06e97e50eb080a0e268cb14bb55289a745bf",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 230124,
@@ -67,8 +67,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fastfloat/fast_float.git",
-                    "tag": "v8.2.5",
-                    "commit": "05087a303dad9c98768b33c829d398223a649bc6",
+                    "tag": "v8.2.10",
+                    "commit": "34164f547b7df3f5d794ff67e9f885c36819ebfc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 214353,
@@ -108,8 +108,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/vte/0.84/vte-0.84.0.tar.xz",
-                    "sha256": "0414e31583836aeb7878da25f67c515f7e8879917ecc37c92e26b83e8d8fc3e3",
+                    "url": "https://download.gnome.org/sources/vte/0.84/vte-0.84.1.tar.xz",
+                    "sha256": "aca1caa8478aebcdbb1d67897fb3511eb7601debae6810e16a15b6fa25f31ac8",
                     "x-checker-data": {
                         "type": "gnome",
                         "version-scheme": "odd-minor-is-unstable",
