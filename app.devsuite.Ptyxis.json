@@ -33,33 +33,7 @@
         "*.a"
     ],
     "modules": [
-        {
-            "name": "libportal",
-            "config-opts": [
-                "--buildtype=release",
-                "-Dbackend-gtk3=disabled",
-                "-Dbackend-gtk4=enabled",
-                "-Dbackend-qt5=disabled",
-                "-Dbackend-qt6=disabled",
-                "-Dportal-tests=false",
-                "-Ddocs=false",
-                "-Dtests=false"
-            ],
-            "buildsystem": "meson",
-            "builddir": true,
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar.xz",
-                    "sha256": "de801ee349ed3c255a9af3c01b1a401fab5b3fc1c35eb2fd7dfb35d4b8194d7f",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 230124,
-                        "url-template": "https://github.com/flatpak/libportal/releases/download/$version/libportal-$version.tar.xz"
-                    }
-                }
-            ]
-        },
+	"shared-modules/libportal/libportal.json",
         {
             "name": "fast_float",
             "buildsystem": "cmake-ninja",
